@@ -345,7 +345,7 @@ optimizer = torch.optim.Adam(model_config_5.classifier.parameters(), lr=0.0005, 
 
 train_loss , train_accuracy = [], []
 test_loss , test_accuracy = [], []
-model = model_config_4.to(device)
+model = model_config_5.to(device)
 
 for epoch in range(15):
     train_epoch_loss, train_epoch_accuracy = train(model, train_loader)
@@ -384,7 +384,7 @@ Add 1 dropout layer p = 0.3, optimizer = Adam, learning rate = 0.0005, weight_de
 
 model_config_6 = torchvision.models.vgg16(pretrained=True)
 model_config_6.to(device)
-classes_list = list(model_config_2.classifier)
+classes_list = list(model_config_6.classifier)
 new_classes_list = []
 new_classes_list.append(nn.Dropout(p=0.3, inplace=True))
 for cls in classes_list:
@@ -397,7 +397,7 @@ print(model_config_6.classifier)
 model_config_6.classifier[7].out_features = 10
 print(model_config_6.classifier)
 
-optimizer = torch.optim.Adam(model_config_4.classifier.parameters(), lr=0.0005, weight_decay= 0.001)
+optimizer = torch.optim.Adam(model_config_6.classifier.parameters(), lr=0.0005, weight_decay= 0.001)
 
 train_loss , train_accuracy = [], []
 test_loss , test_accuracy = [], []
