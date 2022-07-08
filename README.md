@@ -40,3 +40,7 @@ Test accuracy: 85.96%
 Test Loss: 0.306 | Test Acc: 88.74%
 
 ## Problem 3: Implement Bidirectional LSTM and fine tune hyperparameters
+total: 1268
+
+bleu: 0.10033195446730946
+
