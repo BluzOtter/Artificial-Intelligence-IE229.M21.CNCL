@@ -305,7 +305,7 @@ for epoch in range(10):
     test_loss.append(test_epoch_loss)
     test_accuracy.append(test_epoch_accuracy)
 
-test_correct(model_config_3)
+test_correct(model_config_4)
 
 import matplotlib.pyplot as plt
 plt.figure(figsize=(10, 7))
