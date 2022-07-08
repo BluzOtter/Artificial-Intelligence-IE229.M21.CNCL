@@ -1,7 +1,6 @@
 # Implement in Pytorch 
 ## Problem 1: Implement vgg16 model using Pytorch and fine tune hyperparameters.
-
-
+![2](https://user-images.githubusercontent.com/85627308/177997186-415c4264-4598-41ae-8c67-12ab1b9adfc6.png)
 ## Problem 2: Implement RNN + LSTM model using Pytorch and fine tune hyperparameters.
 
 ### 1 - RNN + LSTM
